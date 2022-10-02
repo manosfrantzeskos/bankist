@@ -41,7 +41,7 @@ function loadLazyImage(entries, observer) {
 }
 
 
-const sectionsObserver = new IntersectionObserver(displaySection, {threshold: 0.3});
+const sectionsObserver = new IntersectionObserver(displaySection, {threshold: 0.45});
 
 mainSections.forEach(section => {
     sectionsObserver.observe(section)
