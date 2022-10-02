@@ -1,7 +1,4 @@
-'use strict';
-
-///////////////////////////////////////
-// Modal window
+"use strict";
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
@@ -44,7 +41,7 @@ function loadLazyImage(entries, observer) {
 }
 
 
-const sectionsObserver = new IntersectionObserver(displaySection, {threshold: 0.1});
+const sectionsObserver = new IntersectionObserver(displaySection, {threshold: 0.3});
 
 mainSections.forEach(section => {
     sectionsObserver.observe(section)
@@ -264,6 +261,3 @@ document.addEventListener("keydown", event => {
     if (event.key === "ArrowRight") nextSlide();
     if (event.key === "ArrowLeft") prevSlide();
 });
-
-
-
